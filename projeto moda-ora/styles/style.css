@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    min-height: 100%;
+    
+}
+
+:root {
+    /*paleta de cores*/
+    --cabecalho-color: #121a21;
+    --titulo-color: #eaeef1;
+    --menu-botao-color: #56646f;
+    --botao-selecionado-color: #a6b4c0;
+    --texto-galeria-color: #425b6d;
+    --texto-conteudo-final-color: #d2d6d9;
+
+    /*font*/
+    --font-titulo: normal 400 2.3rem 'Italiana';
+    --texto-size: 1.2rem;
+
+    /*padding*/
+    --padding-conteudo: 6rem;
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: var(--cabecalho-color);
+}
+
+.cabecalho-titulo-menu {
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.cabecalho-titulo {
+    font: var(--font-titulo);
+    color: var(--titulo-color);
+}
+
+.menu-item {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: var(--menu-botao-color);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.menu-item a:hover{
+    color:var(--botao-selecionado-color);
+}
+
+.cabecalho img {
+    width: 100%;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-wrapper {  
+    width: 100vw;
+    max-width: 70vw;
+}
+
+.conteudo-inicial { 
+    padding: var(--padding-conteudo);
+    text-align: center;
+}
+
+.conteudo-titulo {
+    font: var(--font-titulo);
+    margin-bottom: 1.5rem;
+}
+
+.conteudo-texto {
+    font-size: var(--texto-size);
+    line-height: 1.5rem;
+}
+
+.conteudo-galeria-imagens {
+    padding: var(--padding-conteudo);
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.galeria-imagens-item {
+    text-align: center;
+    color: var(--texto-galeria-color);
+}
+
+.galeria-imagens-titulo {
+    margin: 0.6rem 0;
+}
+
+.conteudo-final {
+    padding: var(--padding-conteudo);
+    color: var(--texto-conteudo-final-color);
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo-final-texto {
+    max-width: 50%;
+    
+}
+
+.rodape {
+    background-color: var(--cabecalho-color);
+    color: var(--menu-botao-color);
+    padding: 1rem;
+    text-align: center;
+}

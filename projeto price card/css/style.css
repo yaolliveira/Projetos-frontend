@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --corFundo: #000000;
+    --corDestaque: #5e61ee;
+    --corCard: #3b3b3b;
+    --corTexto: #cccad6;
+    --corTextoPadrao: #ffffff;
+    --corBordaBronze: #e28436;
+    --corBordaPrata: #e6e6e6;
+    --corBordaOuro: #FFC025;
+}
+
+body {
+    background-color: var(--corFundo);
+    color: var(--corTextoPadrao);
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: 200;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: var(--corFundo);
+    height: 80vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cabecalho-titulo {
+    font-size: 2.8em;
+    font-family: 'Urbanist';
+    text-transform: uppercase;
+}
+
+.destaque-titulo {
+    color:var(--corDestaque);
+    font-size: 0.8em;
+    text-transform: lowercase ;
+}
+
+.navegacao-botao {
+    display: inline-block;
+}
+
+.navegacao-botao a {
+    list-style-type: none;
+    font-size: 1.2em;
+    color: var(--corTexto);
+    padding: 10px;
+    margin: 5px;
+}
+
+.navegacao-botao a:hover:not(.botao-planos) {
+    text-decoration: underline;
+}
+
+.botao-planos {
+    background-color: var(--corDestaque);
+    border-radius: 5px;
+    /* pointer-events: none; */
+    cursor: default;
+
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 990px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper-subtitulo h2 {
+    font-size: 2.3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-wrapper-subtitulo p {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.content-wrapper-subtitulo {
+    margin-bottom: 80px;
+}
+
+.content-wrapper-cards {
+    width: 100%;
+    max-width: 950px;
+    /*container flexível para tratar os cards*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-item {
+    background-color: var(--corCard);
+    width: 290px;
+    padding: 0 30px 30px;
+    border-radius: 5px;
+    line-height: 2.4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bronze, .ouro {
+    padding-top: 25px;
+}
+
+.bronze h3 {
+    border-bottom: 2px solid var(--corBordaBronze);
+}
+
+.prata h3 {
+    border-bottom: 2px solid var(--corBordaPrata);
+}
+
+.ouro h3 {
+    border-bottom: 2px solid var(--corBordaOuro);
+}
+
+.card-item h3 {
+    font-size: 1.5em;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-item p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    width: 100%;
+}
+
+.card-item small {
+    font-size: 0.4em;
+}
+
+.card-item-beneficios {
+    flex-grow: 1;
+    padding-left: 18px;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.card-item-beneficios li::marker {
+    color: var(--corDestaque);
+}
+
+.mais-vendido {
+    background-color: var(--corDestaque);
+    text-align: center;
+    height: 25px;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mais-vendido span {
+    color: var(--corTextoPadrao);
+    font-size: 1.1em;
+}
+
+.card-item-cta {
+    width: 100%;
+    background-color: var(--corDestaque);
+    border-radius: 5px;
+    color: var(--corTextoPadrao);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px;
+    margin-top: 15px;
+}
+
+.card-item-cta:hover {
+    outline: 2px solid var(--corDestaque);
+    background-color: var(--corCard);
+    color: var(--corTextoPadrao);
+}
