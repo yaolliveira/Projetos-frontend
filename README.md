@@ -7,3 +7,6 @@
 - HTML
 - CSS
 - Javascript
+
+## Status atual do meu estudo no curso
+- 100 de 760 aulas, 13% concluído ✅
