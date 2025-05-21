@@ -1,5 +1,5 @@
 # Projeto Moda Ora 🖥️
-![modaora1](https://github.com/user-attachments/assets/9da3978f-cbcb-415a-80a9-1b8f1ad999eb)
+![modaora1](screenshots/modaora1.png)
 
 ## Descriçao 📝
 Minha solução do projeto proposto pelo curso do Daniel Tapias, Web Frontend Fundamentos.
@@ -13,5 +13,5 @@ Exibição estática de uma página web.
 - CSS3
 
 ## Acesso ao projeto 🌐
-[Acessar](https://yaolliveira.github.io/projeto-moda-ora/) 🌟
+[Visualizar]() 🌟
 
