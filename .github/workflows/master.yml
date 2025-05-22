@@ -18,7 +18,7 @@ jobs:
       - name: Upload projeto-2
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'https://github.com/yaolliveira/Projetos-frontend/tree/master/projeto%20price%20card'
+          path: 'https://github.com/yaolliveira/Projetos-frontend/projeto price card'
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
