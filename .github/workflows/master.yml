@@ -1,0 +1,24 @@
+name: Deploy projeto-price-card to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload projeto-2
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: 'https://github.com/yaolliveira/Projetos-frontend/tree/master/projeto%20price%20card'
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
