@@ -23,7 +23,7 @@ jobs:
       - name: Upload projeto-price-card como artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'Projetos-frontend/projeto price card'
+          path: 'Projetos-frontend/projeto-price-card'
 
   deploy:
     needs: build
