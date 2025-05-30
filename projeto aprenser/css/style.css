@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-destaque:#F2B705;
+    --color2:#102E50;
+    --color21: #143861;
+    --color3:#E78B48;
+    --color4: #BE3D2A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+p, a, address {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+
+/*cabeçalho*/
+.header-principal {
+    background-color: var(--color2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header_content {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_content .nav_menu {
+    list-style-type: none;
+}
+
+.nav_menu .menu-botao a {
+    color: var(--color-destaque);
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav_menu .menu-botao {
+    display: inline-block;
+    margin: 0.5rem;
+    border: 1px solid var(--color-destaque);
+    border-radius: 5px;
+}
+
+.nav_menu .menu-botao a:hover {
+    background-color: var(--color-destaque);
+    color: var(--color2);
+}
+
+
+/*conteudo hero banner*/
+.wrapper-hero-banner {
+    width: 100%;
+    background-image: linear-gradient(var(--color-destaque), var(--color3), var(--color4));
+}
+
+.hero-banner_content {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.hero-banner_content h1 {
+    font: 300 6rem 'Roboto Condensed', sans-serif;
+    line-height: 7.5rem;
+    margin-bottom: 1rem;
+}
+
+.texto-destaque {
+    text-transform: uppercase;
+}
+
+.btn-saiba-mais {
+    background-color: var(--color-destaque);
+    color: #000000;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+
+    display: block;
+    width: 12rem;
+    padding: 0.5em;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn-saiba-mais:hover {
+    width: 17rem;
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+
+/*conteudo principais cursos*/
+.wrapper-cursos_content {
+    text-align: center;
+    padding: 12rem 0;
+}
+
+.wrapper-cursos_content h2{
+    color: var(--color2);
+    font: 300 3.5rem 'Poppins', sans-serif;
+}
+
+.container-cards {
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.card_curso {
+    /*para que os filhos se relacionem com ele*/
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+    background-color: var(--color3);
+    border-radius: 10px;
+    text-align: center;
+
+    /*para alinhar conteúdo ao centro*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.8s;
+}
+
+.card_curso .card-curso_img {
+    position: absolute; /*se relaciona com o elemento pai card-curso*/
+    top: 1rem;
+    width: 90%;
+    height: 15rem;
+    transition: all 0.5s;
+}
+
+.card_curso .card-curso_img > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card_curso .card-curso_content {
+    position: absolute;
+    top: 16.5rem;
+    width: 100%;
+    height: 2.7rem;
+    padding: 0 2rem;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.card-curso_content .card-curso_subtit {
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-curso_content .card-curso_text {
+    margin-bottom: 2em;
+}
+
+.card_curso .card-curso_content a {
+    background-color: var(--color-destaque);
+    color: var(--color2);
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.card_curso:hover {
+    height: 42rem;
+    overflow: hidden;
+}
+
+.card_curso:hover .card-curso_img {
+    scale: 0.80;
+}
+
+.card_curso:hover .card-curso_content {
+    top: 15rem;
+    height: 45rem;
+}
+
+.card-curso_content a:hover {
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+.ver-mais-cursos-cta {
+    background-color: var(--color3);
+    color: black;
+    display: inline-block;
+    width: 18rem;
+    margin-top: 5rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.ver-mais-cursos-cta:hover {
+    background-color: var(--color2);
+    color: var(--color3);
+    width: 25rem;
+}
+
+/*conteudo nossa escola e conteudo quem somos*/
+.nossa-escola{
+    padding-top: 8rem;
+    background-color: var(--color21);
+} 
+
+.nossa-escola_content {
+    padding-top: 5rem;
+}
+
+.content_subtit {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 4.5rem;
+}
+
+.nossa-escola_content, .quem-somos_content{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.quem-somos {
+    background-color: var(--color-destaque);
+    padding-top: 8rem;
+}
+
+.quem-somos .quem-somos_content {
+    padding: 5rem;
+    color: var(--color2);
+}
+
+.quem-somos .quem-somos_content img {
+    width: 621px;
+    height: 429px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #00000061;
+}
+
+
+/*conteudo contato e localização*/
+.contato {
+    color: var(--color2);
+    padding: 13rem 0;
+}
+
+.contato .contato_content h2 {
+    color: var(--color2);
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contato .contato_content address {
+    margin-top: 1rem;
+}
+
+
+/*footer*/
+footer {
+    background-color: var(--color2);
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    color: #cdcbcb;
+    text-align: center;
+}
+
+footer a {
+    font-weight: 300;
+    color: var(--color-destaque);
+}
+
