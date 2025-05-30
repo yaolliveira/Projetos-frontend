@@ -9,4 +9,4 @@
 - Javascript
 
 ## Status atual do meu estudo
-- 100 de 760 aulas, 13% concluído ✅
+- 116 de 778 aulas, 15% concluído ✅
