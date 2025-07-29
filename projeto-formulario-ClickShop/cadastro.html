@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body> 
+    <header class="main-header">
+        <img class="logo" src="assets/img/logonew2.svg" alt="logo da marca, nome clickshop com traços acima do c, dando efeito de um clique">
+
+        <div class="search-box">
+            <input class="search-products" type="search" placeholder="O que você está buscando?">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,255.99265,255.99265">
+            <g fill-opacity="0.71373" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10,2c-4.41236,0 -8,3.58764 -8,8c0,4.41236 3.58764,8 8,8c2.02665,0 3.87421,-0.76179 5.28516,-2.00781l6.36133,6.36133c0.12541,0.13061 0.31163,0.18321 0.48684,0.13753c0.17521,-0.04568 0.31204,-0.18251 0.35772,-0.35772c0.04568,-0.17521 -0.00693,-0.36143 -0.13753,-0.48684l-6.36133,-6.36133c1.24603,-1.41095 2.00781,-3.25851 2.00781,-5.28516c0,-4.41236 -3.58764,-8 -8,-8zM10,3c3.87192,0 7,3.12808 7,7c0,3.87192 -3.12808,7 -7,7c-3.87192,0 -7,-3.12808 -7,-7c0,-3.87192 3.12808,-7 7,-7z"></path></g></g>
+            </svg>
+        </div>
+
+        <nav>
+            <ul class="menu-header">
+                <li class="menu-header__btn">
+                    <a class="btn-header" href="#">Início</a>
+                </li>
+
+                <li class="menu-header__btn">
+                    <a class="btn-header" href="index.html">Entre</a>
+                </li>
+
+                <li class="menu-header__btn">
+                    <a class="btn-active" href="cadastro.html">Cadastre-se</a>
+                </li>
+
+                <li class="menu__btn-carrinho">
+                    <a class="btn" href=""> <img src="assets/img/icon-carrinho2.png" alt="carrinho de compras"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero-banner">
+                <h2 class="hero-banner__title"><span class="highlight">Cadastre-se</span> e participe de nossos sorteios e promoções.</h2>
+                <p>Ao realizar seu cadastro você receberá um email com um cupom de frete grátis para sua primeira compra!</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container__form-register">
+                <form class="form-register">
+                    <fieldset class="fieldset-wrapper">
+                        <h3 class="title__login-register">Crie uma conta</h3>
+
+                        <label class="label__title" for="nomeCompleto">Nome completo</label>
+                        <input class="input__data" type="text" id="nomeCompleto" required>
+
+                        <label class="label__title" for="data-nascimento">Data de nascimento</label>
+                        <input class="input__data" type="date" id="data-nascimento" required max="2007-07-01">
+
+                        <label class="label__title" for="cpf">CPF </label>
+                        <input class="input__data" type="text" id="cpf" required pattern="\d+" minlength="11" maxlength="11">
+
+                        <label class="label__title" for="email">Email</label>
+                        <input class="input__data" type="email" id="email" required>
+
+                        <label class="label__title" for="criar-senha">Senha</label>
+                        <input class="input__data input__create-confirm-password" 
+                        id="criar-senha" 
+                        type="text" 
+                        required 
+                        minlength="6" 
+                        maxlength="6"
+                        pattern="[a-zA-Z\d@#$&*]{6}"
+                        title="A senha deve possuir no mínimo 6 caracteres, entre letras, números e caracteres especiais.">
+
+                        <label class="label__title" for="confirmar-Senha">Confirme sua senha</label>
+                        <input class="input__data input__create-confirm-password" 
+                        id="confirmar-senha" 
+                        type="text" 
+                        required 
+                        maxlength="6"
+                        minlength="6"
+                        pattern="[a-zA-Z\d@#$&*]{6}"
+                        title="A senha deve possuir no mínimo 6 caracteres entre letras, números e caracteres especiais.">
+
+                        <input class="btn__login-submit" type="submit" value="Criar conta">
+
+                        <button class="btn__login-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19" viewBox="0 0 24 24">
+                                <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032 s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2 C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z">
+                                </path>
+                            </svg>
+                            Criar conta com o Google
+                        </button>
+
+                        <p class="link__login-register">Já tem uma conta? <a href="index.html">Entrar</a></p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

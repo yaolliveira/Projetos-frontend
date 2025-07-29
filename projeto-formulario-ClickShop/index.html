@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body> 
+    <header class="main-header">
+        <img src="assets/img/logonew2.svg" alt="logo">
+
+        <div class="search-box">
+            <input class="search-products" type="search" placeholder="O que você está buscando?">
+
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,255.99265,255.99265">
+            <g fill-opacity="0.71373" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10,2c-4.41236,0 -8,3.58764 -8,8c0,4.41236 3.58764,8 8,8c2.02665,0 3.87421,-0.76179 5.28516,-2.00781l6.36133,6.36133c0.12541,0.13061 0.31163,0.18321 0.48684,0.13753c0.17521,-0.04568 0.31204,-0.18251 0.35772,-0.35772c0.04568,-0.17521 -0.00693,-0.36143 -0.13753,-0.48684l-6.36133,-6.36133c1.24603,-1.41095 2.00781,-3.25851 2.00781,-5.28516c0,-4.41236 -3.58764,-8 -8,-8zM10,3c3.87192,0 7,3.12808 7,7c0,3.87192 -3.12808,7 -7,7c-3.87192,0 -7,-3.12808 -7,-7c0,-3.87192 3.12808,-7 7,-7z"></path></g></g>
+            </svg>
+        </div>
+        
+        <nav>
+            <ul class="menu-header">
+                <li class="menu-header__btn">
+                    <a class="btn-header" href="#">Início</a>
+                </li>
+
+                <li class="menu-header__btn">
+                    <a class="btn-active" href="index.html">Entre</a>
+                </li>
+
+                <li class="menu-header__btn">
+                    <a class="btn-header" href="cadastro.html">Cadastre-se</a>
+                </li>
+
+                <li class="menu__btn-carrinho">
+                    <a href="#"> <img src="assets/img/icon-carrinho2.png" alt="carrinho de compras"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero-banner">
+                <h2 class="hero-banner__title">Mais que produtos, <span class="highlight">praticidade pra sua vida!</span></h2>
+                <p>Entre ou cadastre-se e venha aproveitar nossas ofertas imperdíveis, não
+                fique de fora dessa!</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container__img-form">
+                <div class="container__img">
+                    <img class="img-login" src="assets/img/loginnew2.png" alt="imagem de uma caixa registradora e sacolas">
+                </div>
+    
+                <form class="container__form-login">
+                    <fieldset class="fieldset-wrapper">
+                        <h3 class="title__login-register">Entrar</h3>
+    
+                        <label class="label__title" for="user">Usuário</label>
+                        <input class="input__data" type="text" id="user" required>
+    
+                        <label class="label__title" for="password">Senha</label>
+                        <input class="input__data input__password-login" type="password" id="password" required maxlength="6" minlength="6">
+
+                        <a href="#" class="link__password-recovery">Esqueceu a senha?</a>
+    
+                        <input class="btn__login-submit" type="submit" value="Entrar">
+
+                        <button class="btn__login-submit">
+                           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19" viewBox="0 0 24 24">
+                                <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032 s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2 C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z">
+                                </path>
+                            </svg>
+                            Entrar com o Google
+                        </button>
+
+                        <p class="link__login-register">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
