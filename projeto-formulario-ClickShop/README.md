@@ -15,4 +15,4 @@ Exibição estática de uma página web que simula um site de vendas de produtos
 
 ## Deploy 🌐
 Para fazer o deploy desse projeto utilizei o Netlify, link:
-- [Acessar projeto]()
+- [Acessar projeto](https://projetoclickshop.netlify.app)
